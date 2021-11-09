@@ -1,0 +1,552 @@
+[
+  {
+    "ID": "c:@F@main",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "int main(void)",
+    "location": {
+      "column": "5",
+      "line": "3",
+      "path": "D:\\Uni\\Senior 1\\Semester 1 - Fall 2021\\CSE 211 - Introduction to Embedded Systems\\Project\\Embedded-C\\Playground\\main.c"
+    },
+    "name": "main",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@258@F@main@x",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "x",
+    "location": {
+      "column": "7",
+      "line": "14",
+      "path": "D:\\Uni\\Senior 1\\Semester 1 - Fall 2021\\CSE 211 - Introduction to Embedded Systems\\Project\\Embedded-C\\Playground\\main.c"
+    },
+    "name": "x",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:DIO.h@52@macro@DIO",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "DIO",
+    "location": {
+      "column": "9",
+      "line": "4",
+      "path": "D:\\Uni\\Senior 1\\Semester 1 - Fall 2021\\CSE 211 - Introduction to Embedded Systems\\Project\\Embedded-C\\DIO-Driver\\DIO.h"
+    },
+    "name": "DIO",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@E@Port",
+    "What": "Enum",
+    "defdec": "Def",
+    "display": "Port",
+    "fields": [
+      {
+        "ID": "c:@E@Port@PORTA",
+        "What": "Enumerator",
+        "defdec": "Def",
+        "display": "PORTA",
+        "location": {
+          "column": "13",
+          "line": "9",
+          "path": "D:\\Uni\\Senior 1\\Semester 1 - Fall 2021\\CSE 211 - Introduction to Embedded Systems\\Project\\Embedded-C\\DIO-Driver\\DIO.h"
+        },
+        "name": "PORTA",
+        "origin": "user_include",
+        "scope": null
+      },
+      {
+        "ID": "c:@E@Port@PORTB",
+        "What": "Enumerator",
+        "defdec": "Def",
+        "display": "PORTB",
+        "location": {
+          "column": "20",
+          "line": "9",
+          "path": "D:\\Uni\\Senior 1\\Semester 1 - Fall 2021\\CSE 211 - Introduction to Embedded Systems\\Project\\Embedded-C\\DIO-Driver\\DIO.h"
+        },
+        "name": "PORTB",
+        "origin": "user_include",
+        "scope": null
+      },
+      {
+        "ID": "c:@E@Port@PORTC",
+        "What": "Enumerator",
+        "defdec": "Def",
+        "display": "PORTC",
+        "location": {
+          "column": "27",
+          "line": "9",
+          "path": "D:\\Uni\\Senior 1\\Semester 1 - Fall 2021\\CSE 211 - Introduction to Embedded Systems\\Project\\Embedded-C\\DIO-Driver\\DIO.h"
+        },
+        "name": "PORTC",
+        "origin": "user_include",
+        "scope": null
+      },
+      {
+        "ID": "c:@E@Port@PORTD",
+        "What": "Enumerator",
+        "defdec": "Def",
+        "display": "PORTD",
+        "location": {
+          "column": "34",
+          "line": "9",
+          "path": "D:\\Uni\\Senior 1\\Semester 1 - Fall 2021\\CSE 211 - Introduction to Embedded Systems\\Project\\Embedded-C\\DIO-Driver\\DIO.h"
+        },
+        "name": "PORTD",
+        "origin": "user_include",
+        "scope": null
+      },
+      {
+        "ID": "c:@E@Port@PORTE",
+        "What": "Enumerator",
+        "defdec": "Def",
+        "display": "PORTE",
+        "location": {
+          "column": "41",
+          "line": "9",
+          "path": "D:\\Uni\\Senior 1\\Semester 1 - Fall 2021\\CSE 211 - Introduction to Embedded Systems\\Project\\Embedded-C\\DIO-Driver\\DIO.h"
+        },
+        "name": "PORTE",
+        "origin": "user_include",
+        "scope": null
+      },
+      {
+        "ID": "c:@E@Port@PORTF",
+        "What": "Enumerator",
+        "defdec": "Def",
+        "display": "PORTF",
+        "location": {
+          "column": "48",
+          "line": "9",
+          "path": "D:\\Uni\\Senior 1\\Semester 1 - Fall 2021\\CSE 211 - Introduction to Embedded Systems\\Project\\Embedded-C\\DIO-Driver\\DIO.h"
+        },
+        "name": "PORTF",
+        "origin": "user_include",
+        "scope": null
+      }
+    ],
+    "location": {
+      "column": "6",
+      "line": "9",
+      "path": "D:\\Uni\\Senior 1\\Semester 1 - Fall 2021\\CSE 211 - Introduction to Embedded Systems\\Project\\Embedded-C\\DIO-Driver\\DIO.h"
+    },
+    "name": "Port",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@E@PinDirection",
+    "What": "Enum",
+    "defdec": "Def",
+    "display": "PinDirection",
+    "fields": [
+      {
+        "ID": "c:@E@PinDirection@IN",
+        "What": "Enumerator",
+        "defdec": "Def",
+        "display": "IN",
+        "location": {
+          "column": "21",
+          "line": "11",
+          "path": "D:\\Uni\\Senior 1\\Semester 1 - Fall 2021\\CSE 211 - Introduction to Embedded Systems\\Project\\Embedded-C\\DIO-Driver\\DIO.h"
+        },
+        "name": "IN",
+        "origin": "user_include",
+        "scope": null
+      },
+      {
+        "ID": "c:@E@PinDirection@OUT",
+        "What": "Enumerator",
+        "defdec": "Def",
+        "display": "OUT",
+        "location": {
+          "column": "25",
+          "line": "11",
+          "path": "D:\\Uni\\Senior 1\\Semester 1 - Fall 2021\\CSE 211 - Introduction to Embedded Systems\\Project\\Embedded-C\\DIO-Driver\\DIO.h"
+        },
+        "name": "OUT",
+        "origin": "user_include",
+        "scope": null
+      }
+    ],
+    "location": {
+      "column": "6",
+      "line": "11",
+      "path": "D:\\Uni\\Senior 1\\Semester 1 - Fall 2021\\CSE 211 - Introduction to Embedded Systems\\Project\\Embedded-C\\DIO-Driver\\DIO.h"
+    },
+    "name": "PinDirection",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@DIO_Init",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void DIO_Init(enum Port, uint8, enum PinDirection)",
+    "location": {
+      "column": "6",
+      "line": "14",
+      "path": "D:\\Uni\\Senior 1\\Semester 1 - Fall 2021\\CSE 211 - Introduction to Embedded Systems\\Project\\Embedded-C\\DIO-Driver\\DIO.h"
+    },
+    "name": "DIO_Init",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@DIO_WritePin",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void DIO_WritePin(enum Port, uint8, uint8)",
+    "location": {
+      "column": "6",
+      "line": "16",
+      "path": "D:\\Uni\\Senior 1\\Semester 1 - Fall 2021\\CSE 211 - Introduction to Embedded Systems\\Project\\Embedded-C\\DIO-Driver\\DIO.h"
+    },
+    "name": "DIO_WritePin",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@DIO_WritePort",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void DIO_WritePort(enum Port, uint8)",
+    "location": {
+      "column": "6",
+      "line": "17",
+      "path": "D:\\Uni\\Senior 1\\Semester 1 - Fall 2021\\CSE 211 - Introduction to Embedded Systems\\Project\\Embedded-C\\DIO-Driver\\DIO.h"
+    },
+    "name": "DIO_WritePort",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@DIO_ReadPin",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "uint8 DIO_ReadPin(enum Port, uint8)",
+    "location": {
+      "column": "7",
+      "line": "19",
+      "path": "D:\\Uni\\Senior 1\\Semester 1 - Fall 2021\\CSE 211 - Introduction to Embedded Systems\\Project\\Embedded-C\\DIO-Driver\\DIO.h"
+    },
+    "name": "DIO_ReadPin",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@DIO_ReadPort",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "uint8 DIO_ReadPort(enum Port)",
+    "location": {
+      "column": "7",
+      "line": "20",
+      "path": "D:\\Uni\\Senior 1\\Semester 1 - Fall 2021\\CSE 211 - Introduction to Embedded Systems\\Project\\Embedded-C\\DIO-Driver\\DIO.h"
+    },
+    "name": "DIO_ReadPort",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:types.h@30@macro@TYPES_HEADER",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "TYPES_HEADER",
+    "location": {
+      "column": "9",
+      "line": "2",
+      "path": "D:\\Uni\\Senior 1\\Semester 1 - Fall 2021\\CSE 211 - Introduction to Embedded Systems\\Project\\Embedded-C\\DIO-Driver\\types.h"
+    },
+    "name": "TYPES_HEADER",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:types.h@T@int8",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "signed char",
+    "location": {
+      "column": "21",
+      "line": "5",
+      "path": "D:\\Uni\\Senior 1\\Semester 1 - Fall 2021\\CSE 211 - Introduction to Embedded Systems\\Project\\Embedded-C\\DIO-Driver\\types.h"
+    },
+    "name": "int8",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:types.h@T@uint8",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "unsigned char",
+    "location": {
+      "column": "23",
+      "line": "6",
+      "path": "D:\\Uni\\Senior 1\\Semester 1 - Fall 2021\\CSE 211 - Introduction to Embedded Systems\\Project\\Embedded-C\\DIO-Driver\\types.h"
+    },
+    "name": "uint8",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:types.h@T@int8_ptr",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "signed char *",
+    "location": {
+      "column": "22",
+      "line": "7",
+      "path": "D:\\Uni\\Senior 1\\Semester 1 - Fall 2021\\CSE 211 - Introduction to Embedded Systems\\Project\\Embedded-C\\DIO-Driver\\types.h"
+    },
+    "name": "int8_ptr",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:types.h@T@uint8_ptr",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "unsigned char *",
+    "location": {
+      "column": "24",
+      "line": "8",
+      "path": "D:\\Uni\\Senior 1\\Semester 1 - Fall 2021\\CSE 211 - Introduction to Embedded Systems\\Project\\Embedded-C\\DIO-Driver\\types.h"
+    },
+    "name": "uint8_ptr",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:types.h@T@int16",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "short",
+    "location": {
+      "column": "22",
+      "line": "9",
+      "path": "D:\\Uni\\Senior 1\\Semester 1 - Fall 2021\\CSE 211 - Introduction to Embedded Systems\\Project\\Embedded-C\\DIO-Driver\\types.h"
+    },
+    "name": "int16",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:types.h@T@uint16",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "unsigned short",
+    "location": {
+      "column": "24",
+      "line": "10",
+      "path": "D:\\Uni\\Senior 1\\Semester 1 - Fall 2021\\CSE 211 - Introduction to Embedded Systems\\Project\\Embedded-C\\DIO-Driver\\types.h"
+    },
+    "name": "uint16",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:types.h@T@int16_ptr",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "short *",
+    "location": {
+      "column": "23",
+      "line": "11",
+      "path": "D:\\Uni\\Senior 1\\Semester 1 - Fall 2021\\CSE 211 - Introduction to Embedded Systems\\Project\\Embedded-C\\DIO-Driver\\types.h"
+    },
+    "name": "int16_ptr",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:types.h@T@uint16_ptr",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "unsigned short *",
+    "location": {
+      "column": "25",
+      "line": "12",
+      "path": "D:\\Uni\\Senior 1\\Semester 1 - Fall 2021\\CSE 211 - Introduction to Embedded Systems\\Project\\Embedded-C\\DIO-Driver\\types.h"
+    },
+    "name": "uint16_ptr",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:types.h@T@int32",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "int",
+    "location": {
+      "column": "20",
+      "line": "13",
+      "path": "D:\\Uni\\Senior 1\\Semester 1 - Fall 2021\\CSE 211 - Introduction to Embedded Systems\\Project\\Embedded-C\\DIO-Driver\\types.h"
+    },
+    "name": "int32",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:types.h@T@uint32",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "unsigned int",
+    "location": {
+      "column": "22",
+      "line": "14",
+      "path": "D:\\Uni\\Senior 1\\Semester 1 - Fall 2021\\CSE 211 - Introduction to Embedded Systems\\Project\\Embedded-C\\DIO-Driver\\types.h"
+    },
+    "name": "uint32",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:types.h@T@int32_ptr",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "int *",
+    "location": {
+      "column": "21",
+      "line": "15",
+      "path": "D:\\Uni\\Senior 1\\Semester 1 - Fall 2021\\CSE 211 - Introduction to Embedded Systems\\Project\\Embedded-C\\DIO-Driver\\types.h"
+    },
+    "name": "int32_ptr",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:types.h@T@uint32_ptr",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "unsigned int *",
+    "location": {
+      "column": "23",
+      "line": "16",
+      "path": "D:\\Uni\\Senior 1\\Semester 1 - Fall 2021\\CSE 211 - Introduction to Embedded Systems\\Project\\Embedded-C\\DIO-Driver\\types.h"
+    },
+    "name": "uint32_ptr",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:types.h@T@int64",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "long long",
+    "location": {
+      "column": "19",
+      "line": "17",
+      "path": "D:\\Uni\\Senior 1\\Semester 1 - Fall 2021\\CSE 211 - Introduction to Embedded Systems\\Project\\Embedded-C\\DIO-Driver\\types.h"
+    },
+    "name": "int64",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:types.h@T@uint64",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "unsigned long long",
+    "location": {
+      "column": "28",
+      "line": "18",
+      "path": "D:\\Uni\\Senior 1\\Semester 1 - Fall 2021\\CSE 211 - Introduction to Embedded Systems\\Project\\Embedded-C\\DIO-Driver\\types.h"
+    },
+    "name": "uint64",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:types.h@T@int64_ptr",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "long long *",
+    "location": {
+      "column": "20",
+      "line": "19",
+      "path": "D:\\Uni\\Senior 1\\Semester 1 - Fall 2021\\CSE 211 - Introduction to Embedded Systems\\Project\\Embedded-C\\DIO-Driver\\types.h"
+    },
+    "name": "int64_ptr",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:types.h@T@uint64_ptr",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "unsigned long long *",
+    "location": {
+      "column": "29",
+      "line": "20",
+      "path": "D:\\Uni\\Senior 1\\Semester 1 - Fall 2021\\CSE 211 - Introduction to Embedded Systems\\Project\\Embedded-C\\DIO-Driver\\types.h"
+    },
+    "name": "uint64_ptr",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:types.h@T@float32",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "float",
+    "location": {
+      "column": "15",
+      "line": "23",
+      "path": "D:\\Uni\\Senior 1\\Semester 1 - Fall 2021\\CSE 211 - Introduction to Embedded Systems\\Project\\Embedded-C\\DIO-Driver\\types.h"
+    },
+    "name": "float32",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:types.h@T@float32_ptr",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "float *",
+    "location": {
+      "column": "16",
+      "line": "24",
+      "path": "D:\\Uni\\Senior 1\\Semester 1 - Fall 2021\\CSE 211 - Introduction to Embedded Systems\\Project\\Embedded-C\\DIO-Driver\\types.h"
+    },
+    "name": "float32_ptr",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:types.h@T@float64",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "double",
+    "location": {
+      "column": "16",
+      "line": "25",
+      "path": "D:\\Uni\\Senior 1\\Semester 1 - Fall 2021\\CSE 211 - Introduction to Embedded Systems\\Project\\Embedded-C\\DIO-Driver\\types.h"
+    },
+    "name": "float64",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:types.h@T@float64_ptr",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "double *",
+    "location": {
+      "column": "17",
+      "line": "26",
+      "path": "D:\\Uni\\Senior 1\\Semester 1 - Fall 2021\\CSE 211 - Introduction to Embedded Systems\\Project\\Embedded-C\\DIO-Driver\\types.h"
+    },
+    "name": "float64_ptr",
+    "origin": "user_include",
+    "scope": null
+  }
+]

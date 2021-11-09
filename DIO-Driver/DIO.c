@@ -5,6 +5,7 @@
 #include "bitwise_operation.h"
 #include "DIO.h"
 
+// Initializing a specific [pin] of a specific [port] with some direction [dir].
 void DIO_Init(enum Port port, uint8 pin, enum PinDirection dir)
 {
   SET_BIT(SYSCTL_RCGCGPIO_R, port);
@@ -57,7 +58,7 @@ void DIO_Init(enum Port port, uint8 pin, enum PinDirection dir)
     {
       GPIO_PORTF_PUR_R |= 0x01;
     }
-    if (pin == 5)
+    if (pin == 4)
     {
       GPIO_PORTF_PUR_R |= 0x10;
     }
@@ -68,6 +69,7 @@ void DIO_Init(enum Port port, uint8 pin, enum PinDirection dir)
   }
 }
 
+// Writing the [bit] value to a specific [pin].
 void DIO_WritePin(enum Port port, uint8 pin, uint8 bit)
 {
   switch (port)
@@ -110,4 +112,46 @@ void DIO_WritePort(enum Port port, uint8 bits)
   {
     DIO_WritePin(port, i, GET_BIT(bits, i));
   }
+}
+
+uint8 DIO_ReadPin(enum Port port, uint8 pin)
+{
+  switch (port)
+  {
+  case PORTA:
+    return GET_BIT(GPIO_PORTA_DATA_R, pin);
+    break;
+    
+  case PORTB:
+    return GET_BIT(GPIO_PORTB_DATA_R, pin);
+    break;
+  
+  case PORTC:
+    return GET_BIT(GPIO_PORTC_DATA_R, pin);
+    break;
+    
+  case PORTD:
+    return GET_BIT(GPIO_PORTD_DATA_R, pin);
+    break;
+    
+  case PORTE:
+    return GET_BIT(GPIO_PORTE_DATA_R, pin);
+    break;
+    
+  case PORTF:
+    return GET_BIT(GPIO_PORTF_DATA_R, pin);
+    break;
+  }
+  
+  return 0;
+}
+
+uint8 DIO_ReadPort(enum Port port)
+{
+  uint8 PortValue = 0;
+  for (unsigned int i = 0; i < 8; i++)
+  {
+    PortValue |= (DIO_ReadPin(port, i) << i);
+  }
+  return PortValue;
 }

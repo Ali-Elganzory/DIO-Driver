@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <workspace>
     <project>
-        <path>$WS_DIR$\DIO-Driver.ewp</path>
+        <path>$WS_DIR$\DIO-Driver\DIO-Driver.ewp</path>
+    </project>
+    <project>
+        <path>$WS_DIR$\Playground\playground.ewp</path>
     </project>
     <batchBuild />
 </workspace>
