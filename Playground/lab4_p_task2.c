@@ -1,11 +1,12 @@
-#include <time.h>
+/*#include "DIO.h"
+#include "time.h"
+
 #include <stdint.h>
-#include "DIO.h"
 #include "tm4c123gh6pm.h"
 
 void delay(int c)
 {
-  unsigned int volatile retTime = time(0) + c;
+  unsigned int retTime = time(0) + c;
   while (time(0) < retTime);
 }
 
@@ -15,6 +16,19 @@ uint8 STATE_COUNT = 4;
 
 int main()
 {
+  SYSCTL_RCGCGPIO_R |= 0x20;
+  GPIO_PORTF_LOCK_R = 0x4C4F434B;
+  while((SYSCTL_PRGPIO_R & 0x20) == 0) {};
+  
+  GPIO_PORTF_CR_R = 0X03;
+  GPIO_PORTF_DIR_R = 0X0E;
+  GPIO_PORTF_PUR_R = 0X11;
+  GPIO_PORTF_DEN_R = 0X1F;
+  
+  while (1) {
+    GPIO_PORTF_DATA_R |= 0X0E;
+  }
+  /*
   // Switch pins
   uint8 switch1_pin = 4;
   uint8 switch2_pin = 0;
@@ -34,19 +48,20 @@ int main()
   // Current state
   enum State state = WHITE;
   
-  int nums[] = { 20, 13, 23, 2, 4, 6, 19 };
-  unsigned int counter = 0;
-  
   // Main Loop
   while (1)
   {
     // Check for switches
-    if (DIO_ReadPin(PORTF, switch1_pin) == LOW || DIO_ReadPin(PORTF, switch2_pin) == LOW) {
+    if (DIO_ReadPin(PORTF, switch1_pin) == LOW || DIO_ReadPin(PORTF, switch2_pin) == LOW)
+    {
       delay(1);
-      if (DIO_ReadPin(PORTF, switch1_pin) == LOW || DIO_ReadPin(PORTF, switch2_pin) == LOW) {
-        if (counter < (sizeof(nums) / sizeof(int))) {
-            state = (nums[counter++] % 2) == 0 ? BLUE : RED;
-        }
+      if (DIO_ReadPin(PORTF, switch1_pin) == LOW)
+      {
+        state = (state + 1) % STATE_COUNT;
+      }
+      else if (DIO_ReadPin(PORTF, switch2_pin) == LOW)
+      {
+        state = (state + STATE_COUNT - 1) % STATE_COUNT ;
       }
     }
     
@@ -78,3 +93,4 @@ int main()
   
   return 0;
 }
+*/

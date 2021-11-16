@@ -1,11 +1,13 @@
-#include <time.h>
-#include <stdint.h>
+/*
 #include "DIO.h"
+#include "time.h"
+
+#include <stdint.h>
 #include "tm4c123gh6pm.h"
 
 void delay(int c)
 {
-  unsigned int volatile retTime = time(0) + c;
+  unsigned int retTime = time(0) + c;
   while (time(0) < retTime);
 }
 
@@ -34,19 +36,21 @@ int main()
   // Current state
   enum State state = WHITE;
   
-  int nums[] = { 20, 13, 23, 2, 4, 6, 19 };
-  unsigned int counter = 0;
-  
   // Main Loop
   while (1)
   {
     // Check for switches
-    if (DIO_ReadPin(PORTF, switch1_pin) == LOW || DIO_ReadPin(PORTF, switch2_pin) == LOW) {
+    if (DIO_ReadPin(PORTF, switch1_pin) == LOW || DIO_ReadPin(PORTF, switch2_pin) == LOW)
+    {
       delay(1);
-      if (DIO_ReadPin(PORTF, switch1_pin) == LOW || DIO_ReadPin(PORTF, switch2_pin) == LOW) {
-        if (counter < (sizeof(nums) / sizeof(int))) {
-            state = (nums[counter++] % 2) == 0 ? BLUE : RED;
-        }
+      if (DIO_ReadPin(PORTF, switch1_pin) == LOW && DIO_ReadPin(PORTF, switch2_pin) == LOW) {
+        state = WHITE;
+      }
+      else if (DIO_ReadPin(PORTF, switch1_pin) == LOW) {
+        state = (state + 1) % STATE_COUNT;
+      }
+      else if (DIO_ReadPin(PORTF, switch2_pin) == LOW) {
+        state = (state + STATE_COUNT - 1) % STATE_COUNT ;
       }
     }
     
@@ -78,3 +82,4 @@ int main()
   
   return 0;
 }
+*/

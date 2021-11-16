@@ -96637,13 +96637,57 @@
     "scope": null
   },
   {
+    "ID": "c:@E@DigitalSignal",
+    "What": "Enum",
+    "defdec": "Def",
+    "display": "DigitalSignal",
+    "fields": [
+      {
+        "ID": "c:@E@DigitalSignal@LOW",
+        "What": "Enumerator",
+        "defdec": "Def",
+        "display": "LOW",
+        "location": {
+          "column": "22",
+          "line": "13",
+          "path": "D:\\Uni\\Senior 1\\Semester 1 - Fall 2021\\CSE 211 - Introduction to Embedded Systems\\Project\\Embedded-C\\DIO-Driver\\DIO.h"
+        },
+        "name": "LOW",
+        "origin": "user_include",
+        "scope": null
+      },
+      {
+        "ID": "c:@E@DigitalSignal@HIGH",
+        "What": "Enumerator",
+        "defdec": "Def",
+        "display": "HIGH",
+        "location": {
+          "column": "27",
+          "line": "13",
+          "path": "D:\\Uni\\Senior 1\\Semester 1 - Fall 2021\\CSE 211 - Introduction to Embedded Systems\\Project\\Embedded-C\\DIO-Driver\\DIO.h"
+        },
+        "name": "HIGH",
+        "origin": "user_include",
+        "scope": null
+      }
+    ],
+    "location": {
+      "column": "6",
+      "line": "13",
+      "path": "D:\\Uni\\Senior 1\\Semester 1 - Fall 2021\\CSE 211 - Introduction to Embedded Systems\\Project\\Embedded-C\\DIO-Driver\\DIO.h"
+    },
+    "name": "DigitalSignal",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
     "ID": "c:@F@DIO_Init",
     "What": "Function",
     "defdec": "Dec",
     "display": "void DIO_Init(enum Port, uint8, enum PinDirection)",
     "location": {
       "column": "6",
-      "line": "14",
+      "line": "16",
       "path": "D:\\Uni\\Senior 1\\Semester 1 - Fall 2021\\CSE 211 - Introduction to Embedded Systems\\Project\\Embedded-C\\DIO-Driver\\DIO.h"
     },
     "name": "DIO_Init",
@@ -96657,7 +96701,7 @@
     "display": "void DIO_Init(enum Port, uint8, enum PinDirection)",
     "location": {
       "column": "6",
-      "line": "14",
+      "line": "16",
       "path": "D:\\Uni\\Senior 1\\Semester 1 - Fall 2021\\CSE 211 - Introduction to Embedded Systems\\Project\\Embedded-C\\DIO-Driver\\DIO.h"
     },
     "name": "DIO_Init",
@@ -96671,7 +96715,7 @@
     "display": "void DIO_WritePin(enum Port, uint8, uint8)",
     "location": {
       "column": "6",
-      "line": "16",
+      "line": "18",
       "path": "D:\\Uni\\Senior 1\\Semester 1 - Fall 2021\\CSE 211 - Introduction to Embedded Systems\\Project\\Embedded-C\\DIO-Driver\\DIO.h"
     },
     "name": "DIO_WritePin",
@@ -96685,7 +96729,7 @@
     "display": "void DIO_WritePin(enum Port, uint8, uint8)",
     "location": {
       "column": "6",
-      "line": "16",
+      "line": "18",
       "path": "D:\\Uni\\Senior 1\\Semester 1 - Fall 2021\\CSE 211 - Introduction to Embedded Systems\\Project\\Embedded-C\\DIO-Driver\\DIO.h"
     },
     "name": "DIO_WritePin",
@@ -96699,7 +96743,7 @@
     "display": "void DIO_WritePort(enum Port, uint8)",
     "location": {
       "column": "6",
-      "line": "17",
+      "line": "19",
       "path": "D:\\Uni\\Senior 1\\Semester 1 - Fall 2021\\CSE 211 - Introduction to Embedded Systems\\Project\\Embedded-C\\DIO-Driver\\DIO.h"
     },
     "name": "DIO_WritePort",
@@ -96713,7 +96757,7 @@
     "display": "void DIO_WritePort(enum Port, uint8)",
     "location": {
       "column": "6",
-      "line": "17",
+      "line": "19",
       "path": "D:\\Uni\\Senior 1\\Semester 1 - Fall 2021\\CSE 211 - Introduction to Embedded Systems\\Project\\Embedded-C\\DIO-Driver\\DIO.h"
     },
     "name": "DIO_WritePort",
@@ -96727,7 +96771,7 @@
     "display": "uint8 DIO_ReadPin(enum Port, uint8)",
     "location": {
       "column": "7",
-      "line": "19",
+      "line": "21",
       "path": "D:\\Uni\\Senior 1\\Semester 1 - Fall 2021\\CSE 211 - Introduction to Embedded Systems\\Project\\Embedded-C\\DIO-Driver\\DIO.h"
     },
     "name": "DIO_ReadPin",
@@ -96741,7 +96785,7 @@
     "display": "uint8 DIO_ReadPin(enum Port, uint8)",
     "location": {
       "column": "7",
-      "line": "19",
+      "line": "21",
       "path": "D:\\Uni\\Senior 1\\Semester 1 - Fall 2021\\CSE 211 - Introduction to Embedded Systems\\Project\\Embedded-C\\DIO-Driver\\DIO.h"
     },
     "name": "DIO_ReadPin",
@@ -96755,7 +96799,7 @@
     "display": "uint8 DIO_ReadPort(enum Port)",
     "location": {
       "column": "7",
-      "line": "20",
+      "line": "22",
       "path": "D:\\Uni\\Senior 1\\Semester 1 - Fall 2021\\CSE 211 - Introduction to Embedded Systems\\Project\\Embedded-C\\DIO-Driver\\DIO.h"
     },
     "name": "DIO_ReadPort",
@@ -96769,7 +96813,7 @@
     "display": "uint8 DIO_ReadPort(enum Port)",
     "location": {
       "column": "7",
-      "line": "20",
+      "line": "22",
       "path": "D:\\Uni\\Senior 1\\Semester 1 - Fall 2021\\CSE 211 - Introduction to Embedded Systems\\Project\\Embedded-C\\DIO-Driver\\DIO.h"
     },
     "name": "DIO_ReadPort",
