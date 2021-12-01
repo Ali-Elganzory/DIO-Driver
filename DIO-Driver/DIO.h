@@ -14,6 +14,7 @@ enum DigitalSignal { LOW, HIGH };
 
 // Functions declaration
 void DIO_Init(enum Port port, uint8 pin, enum PinDirection dir);
+void DIO_InitOpenDrain(enum Port port, uint8 pin);
 
 void DIO_WritePin(enum Port port, uint8 pin, uint8 bit);
 void DIO_TogglePin(enum Port port, uint8 pin);

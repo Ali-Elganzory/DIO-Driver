@@ -36,11 +36,11 @@
                 </option>
                 <option>
                     <name>Input description</name>
-                    <state>Full formatting, without multibyte support.</state>
+                    <state></state>
                 </option>
                 <option>
                     <name>Output description</name>
-                    <state>Full formatting, without multibyte support.</state>
+                    <state></state>
                 </option>
                 <option>
                     <name>GOutputBinary</name>
@@ -48,7 +48,7 @@
                 </option>
                 <option>
                     <name>OGCoreOrChip</name>
-                    <state>1</state>
+                    <state>0</state>
                 </option>
                 <option>
                     <name>GRuntimeLibSelect</name>
@@ -62,7 +62,7 @@
                 </option>
                 <option>
                     <name>RTDescription</name>
-                    <state>Use the normal configuration of the C/C++ runtime library. No locale interface, C locale, no file descriptor support, no multibytes in printf and scanf, and no hex floats in strtod.</state>
+                    <state></state>
                 </option>
                 <option>
                     <name>OGProductVersion</name>
@@ -74,7 +74,7 @@
                 </option>
                 <option>
                     <name>OGChipSelectEditMenu</name>
-                    <state>TM4C123GH6PM	TexasInstruments TM4C123GH6PM</state>
+                    <state>Default	None</state>
                 </option>
                 <option>
                     <name>GenLowLevelInterface</name>
@@ -99,7 +99,7 @@
                 <option>
                     <name>GBECoreSlave</name>
                     <version>30</version>
-                    <state>39</state>
+                    <state>38</state>
                 </option>
                 <option>
                     <name>OGUseCmsis</name>
@@ -116,21 +116,21 @@
                 <option>
                     <name>CoreVariant</name>
                     <version>30</version>
-                    <state>39</state>
+                    <state>38</state>
                 </option>
                 <option>
                     <name>GFPUDeviceSlave</name>
-                    <state>TM4C123GH6PM	TexasInstruments TM4C123GH6PM</state>
+                    <state>Default	None</state>
                 </option>
                 <option>
                     <name>FPU2</name>
                     <version>0</version>
-                    <state>4</state>
+                    <state>0</state>
                 </option>
                 <option>
                     <name>NrRegs</name>
                     <version>0</version>
-                    <state>1</state>
+                    <state>0</state>
                 </option>
                 <option>
                     <name>NEON</name>
@@ -139,7 +139,7 @@
                 <option>
                     <name>GFPUCoreSlave2</name>
                     <version>30</version>
-                    <state>39</state>
+                    <state>38</state>
                 </option>
                 <option>
                     <name>OGCMSISPackSelectDevice</name>
@@ -180,7 +180,7 @@
                 </option>
                 <option>
                     <name>DSPExtension</name>
-                    <state>1</state>
+                    <state>0</state>
                 </option>
                 <option>
                     <name>TrustZone</name>
@@ -214,9 +214,7 @@
                 </option>
                 <option>
                     <name>CCDefines</name>
-                    <state>ewarm</state>
-                    <state>PART_TM4C123GH6PM</state>
-                    <state>TARGET_IS_TM4C123_rb1</state>
+                    <state></state>
                 </option>
                 <option>
                     <name>CCPreprocFile</name>
@@ -337,8 +335,7 @@
                 </option>
                 <option>
                     <name>CCIncludePath2</name>
-                    <state>D:\Uni\Senior 1\Semester 1 - Fall 2021\CSE 211 - Introduction to Embedded Systems\Project\Embedded-C\DIO-Driver</state>
-                    <state>D:\Program Files\ti\TivaWare_C_Series-2.2.0.295</state>
+                    <state></state>
                 </option>
                 <option>
                     <name>CCStdIncCheck</name>
@@ -582,7 +579,7 @@
                 </option>
                 <option>
                     <name>AOutputFile</name>
-                    <state>$FILE_BNAME$.o</state>
+                    <state></state>
                 </option>
                 <option>
                     <name>ALimitErrorsCheck</name>
@@ -654,7 +651,7 @@
             <data>
                 <extensions></extensions>
                 <cmdline></cmdline>
-                <hasPrio>1</hasPrio>
+                <hasPrio>0</hasPrio>
                 <buildSequence>inputOutputBased</buildSequence>
             </data>
         </settings>
@@ -747,7 +744,7 @@
                 </option>
                 <option>
                     <name>IlinkIcfFile</name>
-                    <state>$TOOLKIT_DIR$\config\linker\TexasInstruments\TM4C123GH6.icf</state>
+                    <state></state>
                 </option>
                 <option>
                     <name>IlinkIcfFileSlave</name>
@@ -795,8 +792,7 @@
                 </option>
                 <option>
                     <name>IlinkAdditionalLibs</name>
-                    <state>D:\Uni\Senior 1\Semester 1 - Fall 2021\CSE 211 - Introduction to Embedded Systems\Project\Embedded-C\DIO-Driver\Debug\Obj\DIO.o</state>
-                    <state>D:\Program Files\ti\TivaWare_C_Series-2.2.0.295\driverlib\ewarm\Exe\driverlib.a</state>
+                    <state></state>
                 </option>
                 <option>
                     <name>IlinkOverrideProgramEntryLabel</name>
@@ -808,7 +804,7 @@
                 </option>
                 <option>
                     <name>IlinkProgramEntryLabel</name>
-                    <state>__iar_program_start</state>
+                    <state></state>
                 </option>
                 <option>
                     <name>DoFill</name>
@@ -981,7 +977,7 @@
                 </option>
                 <option>
                     <name>IlinkTrustzoneImportLibraryOut</name>
-                    <state>playground_import_lib.o</state>
+                    <state>###Unitialized###</state>
                 </option>
                 <option>
                     <name>OILinkExtraOption</name>
@@ -2090,18 +2086,12 @@
         </settings>
     </configuration>
     <file>
-        <name>$PROJ_DIR$\lab4_p_task1.c</name>
-    </file>
-    <file>
-        <name>$PROJ_DIR$\lab4_p_task2.c</name>
-    </file>
-    <file>
-        <name>$PROJ_DIR$\lab4_task1.c</name>
-    </file>
-    <file>
-        <name>$PROJ_DIR$\lab4_task2.c</name>
-    </file>
-    <file>
         <name>$PROJ_DIR$\main.c</name>
+    </file>
+    <file>
+        <name>$PROJ_DIR$\UART .c</name>
+    </file>
+    <file>
+        <name>$PROJ_DIR$\UART.h</name>
     </file>
 </project>

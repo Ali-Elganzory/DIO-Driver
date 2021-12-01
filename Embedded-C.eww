@@ -4,7 +4,13 @@
         <path>$WS_DIR$\DIO-Driver\DIO-Driver.ewp</path>
     </project>
     <project>
-        <path>$WS_DIR$\Playground\playground.ewp</path>
+        <path>$WS_DIR$\Keypad\Keypad.ewp</path>
+    </project>
+    <project>
+        <path>$WS_DIR$\Playground\Playground.ewp</path>
+    </project>
+    <project>
+        <path>$WS_DIR$\Traffic-Lights\Traffic-Lights.ewp</path>
     </project>
     <batchBuild />
 </workspace>

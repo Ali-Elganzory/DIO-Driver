@@ -95891,6 +95891,146 @@
     "scope": null
   },
   {
+    "ID": "c:@F@DIO_Init",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void DIO_Init(enum Port, uint8, enum PinDirection)",
+    "location": {
+      "column": "6",
+      "line": "9",
+      "path": "D:\\Uni\\Senior 1\\Semester 1 - Fall 2021\\CSE 211 - Introduction to Embedded Systems\\Project\\Embedded-C\\DIO-Driver\\DIO.c"
+    },
+    "name": "DIO_Init",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@DIO_InitOpenDrain",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void DIO_InitOpenDrain(enum Port, uint8)",
+    "location": {
+      "column": "6",
+      "line": "91",
+      "path": "D:\\Uni\\Senior 1\\Semester 1 - Fall 2021\\CSE 211 - Introduction to Embedded Systems\\Project\\Embedded-C\\DIO-Driver\\DIO.c"
+    },
+    "name": "DIO_InitOpenDrain",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@DIO_WritePin",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void DIO_WritePin(enum Port, uint8, uint8)",
+    "location": {
+      "column": "6",
+      "line": "121",
+      "path": "D:\\Uni\\Senior 1\\Semester 1 - Fall 2021\\CSE 211 - Introduction to Embedded Systems\\Project\\Embedded-C\\DIO-Driver\\DIO.c"
+    },
+    "name": "DIO_WritePin",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@DIO_TogglePin",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void DIO_TogglePin(enum Port, uint8)",
+    "location": {
+      "column": "6",
+      "line": "156",
+      "path": "D:\\Uni\\Senior 1\\Semester 1 - Fall 2021\\CSE 211 - Introduction to Embedded Systems\\Project\\Embedded-C\\DIO-Driver\\DIO.c"
+    },
+    "name": "DIO_TogglePin",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@DIO_WritePort",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void DIO_WritePort(enum Port, uint8)",
+    "location": {
+      "column": "6",
+      "line": "184",
+      "path": "D:\\Uni\\Senior 1\\Semester 1 - Fall 2021\\CSE 211 - Introduction to Embedded Systems\\Project\\Embedded-C\\DIO-Driver\\DIO.c"
+    },
+    "name": "DIO_WritePort",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:DIO.c@4254@F@DIO_WritePort@i",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "i",
+    "location": {
+      "column": "21",
+      "line": "185",
+      "path": "D:\\Uni\\Senior 1\\Semester 1 - Fall 2021\\CSE 211 - Introduction to Embedded Systems\\Project\\Embedded-C\\DIO-Driver\\DIO.c"
+    },
+    "name": "i",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@DIO_ReadPin",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "uint8 DIO_ReadPin(enum Port, uint8)",
+    "location": {
+      "column": "7",
+      "line": "190",
+      "path": "D:\\Uni\\Senior 1\\Semester 1 - Fall 2021\\CSE 211 - Introduction to Embedded Systems\\Project\\Embedded-C\\DIO-Driver\\DIO.c"
+    },
+    "name": "DIO_ReadPin",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@DIO_ReadPort",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "uint8 DIO_ReadPort(enum Port)",
+    "location": {
+      "column": "7",
+      "line": "220",
+      "path": "D:\\Uni\\Senior 1\\Semester 1 - Fall 2021\\CSE 211 - Introduction to Embedded Systems\\Project\\Embedded-C\\DIO-Driver\\DIO.c"
+    },
+    "name": "DIO_ReadPort",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:DIO.c@4939@F@DIO_ReadPort@PortValue",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "PortValue",
+    "location": {
+      "column": "9",
+      "line": "221",
+      "path": "D:\\Uni\\Senior 1\\Semester 1 - Fall 2021\\CSE 211 - Introduction to Embedded Systems\\Project\\Embedded-C\\DIO-Driver\\DIO.c"
+    },
+    "name": "PortValue",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:DIO.c@4968@F@DIO_ReadPort@i",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "i",
+    "location": {
+      "column": "21",
+      "line": "222",
+      "path": "D:\\Uni\\Senior 1\\Semester 1 - Fall 2021\\CSE 211 - Introduction to Embedded Systems\\Project\\Embedded-C\\DIO-Driver\\DIO.c"
+    },
+    "name": "i",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
     "ID": "c:DLib_Product.h@75@macro@_DLIB_PRODUCTS_H_",
     "What": "MacroDef",
     "defdec": "Def",
@@ -96269,133 +96409,21 @@
     "scope": null
   },
   {
-    "ID": "c:@F@DIO_Init",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void DIO_Init(enum Port, uint8, enum PinDirection)",
-    "location": {
-      "column": "6",
-      "line": "9",
-      "path": "D:\\Uni\\Senior 1\\Semester 1 - Fall 2021\\CSE 211 - Introduction to Embedded Systems\\Project\\Embedded-C\\DIO-Driver\\DIO.c"
-    },
-    "name": "DIO_Init",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@DIO_WritePin",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void DIO_WritePin(enum Port, uint8, uint8)",
-    "location": {
-      "column": "6",
-      "line": "73",
-      "path": "D:\\Uni\\Senior 1\\Semester 1 - Fall 2021\\CSE 211 - Introduction to Embedded Systems\\Project\\Embedded-C\\DIO-Driver\\DIO.c"
-    },
-    "name": "DIO_WritePin",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@DIO_WritePort",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void DIO_WritePort(enum Port, uint8)",
-    "location": {
-      "column": "6",
-      "line": "109",
-      "path": "D:\\Uni\\Senior 1\\Semester 1 - Fall 2021\\CSE 211 - Introduction to Embedded Systems\\Project\\Embedded-C\\DIO-Driver\\DIO.c"
-    },
-    "name": "DIO_WritePort",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:DIO.c@2910@F@DIO_WritePort@i",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "i",
-    "location": {
-      "column": "21",
-      "line": "111",
-      "path": "D:\\Uni\\Senior 1\\Semester 1 - Fall 2021\\CSE 211 - Introduction to Embedded Systems\\Project\\Embedded-C\\DIO-Driver\\DIO.c"
-    },
-    "name": "i",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@DIO_ReadPin",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "uint8 DIO_ReadPin(enum Port, uint8)",
-    "location": {
-      "column": "7",
-      "line": "117",
-      "path": "D:\\Uni\\Senior 1\\Semester 1 - Fall 2021\\CSE 211 - Introduction to Embedded Systems\\Project\\Embedded-C\\DIO-Driver\\DIO.c"
-    },
-    "name": "DIO_ReadPin",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@DIO_ReadPort",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "uint8 DIO_ReadPort(enum Port)",
-    "location": {
-      "column": "7",
-      "line": "149",
-      "path": "D:\\Uni\\Senior 1\\Semester 1 - Fall 2021\\CSE 211 - Introduction to Embedded Systems\\Project\\Embedded-C\\DIO-Driver\\DIO.c"
-    },
-    "name": "DIO_ReadPort",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:DIO.c@3603@F@DIO_ReadPort@PortValue",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "PortValue",
-    "location": {
-      "column": "9",
-      "line": "151",
-      "path": "D:\\Uni\\Senior 1\\Semester 1 - Fall 2021\\CSE 211 - Introduction to Embedded Systems\\Project\\Embedded-C\\DIO-Driver\\DIO.c"
-    },
-    "name": "PortValue",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:DIO.c@3632@F@DIO_ReadPort@i",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "i",
-    "location": {
-      "column": "21",
-      "line": "152",
-      "path": "D:\\Uni\\Senior 1\\Semester 1 - Fall 2021\\CSE 211 - Introduction to Embedded Systems\\Project\\Embedded-C\\DIO-Driver\\DIO.c"
-    },
-    "name": "i",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:bitwise_operation.h@35@macro@BITWISE_OPERATION",
+    "ID": "c:bitwise_operation.h@41@macro@__BITWISE_OPERATION_H__",
     "What": "MacroDef",
     "defdec": "Def",
-    "display": "BITWISE_OPERATION",
+    "display": "__BITWISE_OPERATION_H__",
     "location": {
       "column": "9",
       "line": "2",
       "path": "D:\\Uni\\Senior 1\\Semester 1 - Fall 2021\\CSE 211 - Introduction to Embedded Systems\\Project\\Embedded-C\\DIO-Driver\\bitwise_operation.h"
     },
-    "name": "BITWISE_OPERATION",
+    "name": "__BITWISE_OPERATION_H__",
     "origin": "user_include",
     "scope": null
   },
   {
-    "ID": "c:bitwise_operation.h@64@macro@SET_BIT",
+    "ID": "c:bitwise_operation.h@76@macro@SET_BIT",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "SET_BIT",
@@ -96409,7 +96437,7 @@
     "scope": null
   },
   {
-    "ID": "c:bitwise_operation.h@119@macro@CLEAR_BIT",
+    "ID": "c:bitwise_operation.h@131@macro@CLEAR_BIT",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "CLEAR_BIT",
@@ -96423,7 +96451,7 @@
     "scope": null
   },
   {
-    "ID": "c:bitwise_operation.h@177@macro@GET_BIT",
+    "ID": "c:bitwise_operation.h@189@macro@GET_BIT",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GET_BIT",
@@ -96437,7 +96465,7 @@
     "scope": null
   },
   {
-    "ID": "c:bitwise_operation.h@240@macro@TOGGLE_BIT",
+    "ID": "c:bitwise_operation.h@252@macro@TOGGLE_BIT",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "TOGGLE_BIT",
@@ -96479,16 +96507,16 @@
     "scope": null
   },
   {
-    "ID": "c:DIO.h@52@macro@DIO",
+    "ID": "c:DIO.h@59@macro@__DIO__H__",
     "What": "MacroDef",
     "defdec": "Def",
-    "display": "DIO",
+    "display": "__DIO__H__",
     "location": {
       "column": "9",
       "line": "4",
       "path": "D:\\Uni\\Senior 1\\Semester 1 - Fall 2021\\CSE 211 - Introduction to Embedded Systems\\Project\\Embedded-C\\DIO-Driver\\DIO.h"
     },
-    "name": "DIO",
+    "name": "__DIO__H__",
     "origin": "user_include",
     "scope": null
   },
@@ -96709,13 +96737,41 @@
     "scope": null
   },
   {
+    "ID": "c:@F@DIO_InitOpenDrain",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void DIO_InitOpenDrain(enum Port, uint8)",
+    "location": {
+      "column": "6",
+      "line": "17",
+      "path": "D:\\Uni\\Senior 1\\Semester 1 - Fall 2021\\CSE 211 - Introduction to Embedded Systems\\Project\\Embedded-C\\DIO-Driver\\DIO.h"
+    },
+    "name": "DIO_InitOpenDrain",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@DIO_InitOpenDrain",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void DIO_InitOpenDrain(enum Port, uint8)",
+    "location": {
+      "column": "6",
+      "line": "17",
+      "path": "D:\\Uni\\Senior 1\\Semester 1 - Fall 2021\\CSE 211 - Introduction to Embedded Systems\\Project\\Embedded-C\\DIO-Driver\\DIO.h"
+    },
+    "name": "DIO_InitOpenDrain",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
     "ID": "c:@F@DIO_WritePin",
     "What": "Function",
     "defdec": "Dec",
     "display": "void DIO_WritePin(enum Port, uint8, uint8)",
     "location": {
       "column": "6",
-      "line": "18",
+      "line": "19",
       "path": "D:\\Uni\\Senior 1\\Semester 1 - Fall 2021\\CSE 211 - Introduction to Embedded Systems\\Project\\Embedded-C\\DIO-Driver\\DIO.h"
     },
     "name": "DIO_WritePin",
@@ -96729,10 +96785,38 @@
     "display": "void DIO_WritePin(enum Port, uint8, uint8)",
     "location": {
       "column": "6",
-      "line": "18",
+      "line": "19",
       "path": "D:\\Uni\\Senior 1\\Semester 1 - Fall 2021\\CSE 211 - Introduction to Embedded Systems\\Project\\Embedded-C\\DIO-Driver\\DIO.h"
     },
     "name": "DIO_WritePin",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@DIO_TogglePin",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void DIO_TogglePin(enum Port, uint8)",
+    "location": {
+      "column": "6",
+      "line": "20",
+      "path": "D:\\Uni\\Senior 1\\Semester 1 - Fall 2021\\CSE 211 - Introduction to Embedded Systems\\Project\\Embedded-C\\DIO-Driver\\DIO.h"
+    },
+    "name": "DIO_TogglePin",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@DIO_TogglePin",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void DIO_TogglePin(enum Port, uint8)",
+    "location": {
+      "column": "6",
+      "line": "20",
+      "path": "D:\\Uni\\Senior 1\\Semester 1 - Fall 2021\\CSE 211 - Introduction to Embedded Systems\\Project\\Embedded-C\\DIO-Driver\\DIO.h"
+    },
+    "name": "DIO_TogglePin",
     "origin": "user_include",
     "scope": null
   },
@@ -96743,7 +96827,7 @@
     "display": "void DIO_WritePort(enum Port, uint8)",
     "location": {
       "column": "6",
-      "line": "19",
+      "line": "21",
       "path": "D:\\Uni\\Senior 1\\Semester 1 - Fall 2021\\CSE 211 - Introduction to Embedded Systems\\Project\\Embedded-C\\DIO-Driver\\DIO.h"
     },
     "name": "DIO_WritePort",
@@ -96757,7 +96841,7 @@
     "display": "void DIO_WritePort(enum Port, uint8)",
     "location": {
       "column": "6",
-      "line": "19",
+      "line": "21",
       "path": "D:\\Uni\\Senior 1\\Semester 1 - Fall 2021\\CSE 211 - Introduction to Embedded Systems\\Project\\Embedded-C\\DIO-Driver\\DIO.h"
     },
     "name": "DIO_WritePort",
@@ -96771,7 +96855,7 @@
     "display": "uint8 DIO_ReadPin(enum Port, uint8)",
     "location": {
       "column": "7",
-      "line": "21",
+      "line": "23",
       "path": "D:\\Uni\\Senior 1\\Semester 1 - Fall 2021\\CSE 211 - Introduction to Embedded Systems\\Project\\Embedded-C\\DIO-Driver\\DIO.h"
     },
     "name": "DIO_ReadPin",
@@ -96785,7 +96869,7 @@
     "display": "uint8 DIO_ReadPin(enum Port, uint8)",
     "location": {
       "column": "7",
-      "line": "21",
+      "line": "23",
       "path": "D:\\Uni\\Senior 1\\Semester 1 - Fall 2021\\CSE 211 - Introduction to Embedded Systems\\Project\\Embedded-C\\DIO-Driver\\DIO.h"
     },
     "name": "DIO_ReadPin",
@@ -96799,7 +96883,7 @@
     "display": "uint8 DIO_ReadPort(enum Port)",
     "location": {
       "column": "7",
-      "line": "22",
+      "line": "24",
       "path": "D:\\Uni\\Senior 1\\Semester 1 - Fall 2021\\CSE 211 - Introduction to Embedded Systems\\Project\\Embedded-C\\DIO-Driver\\DIO.h"
     },
     "name": "DIO_ReadPort",
@@ -96813,7 +96897,7 @@
     "display": "uint8 DIO_ReadPort(enum Port)",
     "location": {
       "column": "7",
-      "line": "22",
+      "line": "24",
       "path": "D:\\Uni\\Senior 1\\Semester 1 - Fall 2021\\CSE 211 - Introduction to Embedded Systems\\Project\\Embedded-C\\DIO-Driver\\DIO.h"
     },
     "name": "DIO_ReadPort",

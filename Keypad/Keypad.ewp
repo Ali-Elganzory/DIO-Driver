@@ -214,9 +214,7 @@
                 </option>
                 <option>
                     <name>CCDefines</name>
-                    <state>ewarm</state>
-                    <state>PART_TM4C123GH6PM</state>
-                    <state>TARGET_IS_TM4C123_rb1</state>
+                    <state></state>
                 </option>
                 <option>
                     <name>CCPreprocFile</name>
@@ -338,7 +336,6 @@
                 <option>
                     <name>CCIncludePath2</name>
                     <state>D:\Uni\Senior 1\Semester 1 - Fall 2021\CSE 211 - Introduction to Embedded Systems\Project\Embedded-C\DIO-Driver</state>
-                    <state>D:\Program Files\ti\TivaWare_C_Series-2.2.0.295</state>
                 </option>
                 <option>
                     <name>CCStdIncCheck</name>
@@ -796,7 +793,6 @@
                 <option>
                     <name>IlinkAdditionalLibs</name>
                     <state>D:\Uni\Senior 1\Semester 1 - Fall 2021\CSE 211 - Introduction to Embedded Systems\Project\Embedded-C\DIO-Driver\Debug\Obj\DIO.o</state>
-                    <state>D:\Program Files\ti\TivaWare_C_Series-2.2.0.295\driverlib\ewarm\Exe\driverlib.a</state>
                 </option>
                 <option>
                     <name>IlinkOverrideProgramEntryLabel</name>
@@ -2090,16 +2086,10 @@
         </settings>
     </configuration>
     <file>
-        <name>$PROJ_DIR$\lab4_p_task1.c</name>
+        <name>$PROJ_DIR$\Keypad.c</name>
     </file>
     <file>
-        <name>$PROJ_DIR$\lab4_p_task2.c</name>
-    </file>
-    <file>
-        <name>$PROJ_DIR$\lab4_task1.c</name>
-    </file>
-    <file>
-        <name>$PROJ_DIR$\lab4_task2.c</name>
+        <name>$PROJ_DIR$\Keypad.h</name>
     </file>
     <file>
         <name>$PROJ_DIR$\main.c</name>

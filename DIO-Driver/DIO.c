@@ -87,6 +87,36 @@ void DIO_Init(enum Port port, uint8 pin, enum PinDirection dir) {
   }
 }
 
+// Initialize a [pin] with open drain output.
+void DIO_InitOpenDrain(enum Port port, uint8 pin) {
+  DIO_Init(port, pin, OUT);
+  switch (port) {
+  case PORTA:
+    SET_BIT(GPIO_PORTA_ODR_R, pin);
+    break;
+    
+  case PORTB:
+    SET_BIT(GPIO_PORTB_ODR_R, pin);
+    break;
+  
+  case PORTC:
+    SET_BIT(GPIO_PORTC_ODR_R, pin);
+    break;
+    
+  case PORTD:
+    SET_BIT(GPIO_PORTD_ODR_R, pin);
+    break;
+    
+  case PORTE:
+    SET_BIT(GPIO_PORTE_ODR_R, pin);
+    break;
+    
+  case PORTF:
+    SET_BIT(GPIO_PORTF_ODR_R, pin);
+    break;
+  }
+}
+
 // Writing the [bit] value to a specific [pin].
 void DIO_WritePin(enum Port port, uint8 pin, uint8 bit) {
   switch (port) {

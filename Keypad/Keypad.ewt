@@ -2840,16 +2840,10 @@
         </settings>
     </configuration>
     <file>
-        <name>$PROJ_DIR$\lab4_p_task1.c</name>
+        <name>$PROJ_DIR$\Keypad.c</name>
     </file>
     <file>
-        <name>$PROJ_DIR$\lab4_p_task2.c</name>
-    </file>
-    <file>
-        <name>$PROJ_DIR$\lab4_task1.c</name>
-    </file>
-    <file>
-        <name>$PROJ_DIR$\lab4_task2.c</name>
+        <name>$PROJ_DIR$\Keypad.h</name>
     </file>
     <file>
         <name>$PROJ_DIR$\main.c</name>
