@@ -28,7 +28,7 @@ int main()
   while (1) {
     GPIO_PORTF_DATA_R |= 0X0E;
   }
-  /*
+  
   // Switch pins
   uint8 switch1_pin = 4;
   uint8 switch2_pin = 0;
