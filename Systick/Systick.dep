@@ -5,67 +5,73 @@
     <configuration>
         <name>Debug</name>
         <outputs>
-            <file>$PROJ_DIR$\main.c</file>
+            <file>$PROJ_DIR$\systick.c</file>
             <file>$PROJ_DIR$\systick.h</file>
-            <file>$PROJ_DIR$\Debug\Obj\lab4_p_task2.o</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\..\Program Files\ti\TivaWare_C_Series-2.2.0.295\inc\hw_memmap.h</file>
+            <file>$PROJ_DIR$\main.c</file>
             <file>$PROJ_DIR$\Debug\Obj\main.o</file>
             <file>$PROJ_DIR$\lab4_task2.c</file>
-            <file>$PROJ_DIR$\Debug\Obj\lab4_task1.o</file>
-            <file>$PROJ_DIR$\systick.c</file>
-            <file>$PROJ_DIR$\..\..\..\..\..\..\..\Program Files\ti\TivaWare_C_Series-2.2.0.295\inc\hw_memmap.h</file>
             <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
             <file>$PROJ_DIR$\Debug\List\Systick.map</file>
             <file>$TOOLKIT_DIR$\inc\c\stdint.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\DLib_Config_Normal.h</file>
             <file>$TOOLKIT_DIR$\inc\c\ysizet.h</file>
-            <file>$PROJ_DIR$\Debug\Obj\lab4_task2.o</file>
             <file>$PROJ_DIR$\Debug\Exe\Systick.out</file>
-            <file>$TOOLKIT_DIR$\config\linker\TexasInstruments\TM4C123GH6.icf</file>
-            <file>$PROJ_DIR$\..\DIO-Driver\Debug\Obj\DIO.o</file>
-            <file>$PROJ_DIR$\lab4_task1.c</file>
-            <file>$PROJ_DIR$\lab4_p_task1.c</file>
-            <file>$TOOLKIT_DIR$\lib\shb_l.a</file>
-            <file>$PROJ_DIR$\Debug\Obj\systick.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\lab4_p_task2.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\lab4_task1.o</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Config_Normal.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\lab4_task2.o</file>
             <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
+            <file>$PROJ_DIR$\..\DIO-Driver\Debug\Obj\DIO.o</file>
+            <file>$TOOLKIT_DIR$\config\linker\TexasInstruments\TM4C123GH6.icf</file>
             <file>$TOOLKIT_DIR$\inc\c\time64.h</file>
-            <file>$PROJ_DIR$\Debug\Obj\lab4_p_task1.o</file>
             <file>$PROJ_DIR$\..\..\..\..\..\..\..\Program Files\ti\TivaWare_C_Series-2.2.0.295\driverlib\ewarm\Exe\driverlib.a</file>
-            <file>$TOOLKIT_DIR$\lib\dl7M_tln.a</file>
-            <file>$PROJ_DIR$\lab4_p_task2.c</file>
-            <file>$PROJ_DIR$\..\..\..\..\..\..\..\Program Files\ti\TivaWare_C_Series-2.2.0.295\inc\hw_types.h</file>
-            <file>$TOOLKIT_DIR$\lib\rt7M_tl.a</file>
-            <file>$TOOLKIT_DIR$\inc\c\stdbool.h</file>
             <file>$PROJ_DIR$\..\..\..\..\..\..\..\Program Files\ti\TivaWare_C_Series-2.2.0.295\driverlib\sysctl.h</file>
             <file>$TOOLKIT_DIR$\inc\c\time.h</file>
             <file>$PROJ_DIR$\Debug\Exe\Playground.out</file>
-            <file>$PROJ_DIR$\..\..\..\..\..\..\..\Program Files\ti\TivaWare_C_Series-2.2.0.295\driverlib\gpio.h</file>
-            <file>$PROJ_DIR$\..\DIO-Driver\tm4c123gh6pm.h</file>
             <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
-            <file>$PROJ_DIR$\..\..\..\..\..\..\..\Program Files\ti\TivaWare_C_Series-2.2.0.295\inc\hw_gpio.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\lab4_p_task1.o</file>
+            <file>$PROJ_DIR$\lab4_p_task1.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\..\Program Files\ti\TivaWare_C_Series-2.2.0.295\inc\hw_types.h</file>
+            <file>$PROJ_DIR$\lab4_task1.c</file>
+            <file>$TOOLKIT_DIR$\lib\dl7M_tln.a</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\..\Program Files\ti\TivaWare_C_Series-2.2.0.295\driverlib\gpio.h</file>
             <file>$TOOLKIT_DIR$\lib\m7M_tls.a</file>
+            <file>$PROJ_DIR$\Debug\Obj\systick.o</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\..\..\Program Files\ti\TivaWare_C_Series-2.2.0.295\inc\hw_gpio.h</file>
+            <file>$PROJ_DIR$\..\DIO-Driver\tm4c123gh6pm.h</file>
+            <file>$TOOLKIT_DIR$\lib\rt7M_tl.a</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdbool.h</file>
+            <file>$TOOLKIT_DIR$\lib\shb_l.a</file>
+            <file>$PROJ_DIR$\lab4_p_task2.c</file>
         </outputs>
         <file>
-            <name>[ROOT_NODE]</name>
+            <name>$PROJ_DIR$\systick.c</name>
             <outputs>
                 <tool>
-                    <name>ILINK</name>
-                    <file> 15 9</file>
+                    <name>ICCARM</name>
+                    <file> 32</file>
                 </tool>
             </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 14 16 24 36 9 7 6 34 1</file>
+                </tool>
+            </inputs>
         </file>
         <file>
             <name>$PROJ_DIR$\main.c</name>
             <outputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 3</file>
+                    <file> 4</file>
                 </tool>
             </outputs>
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 12 22 36 30 10 32 23 11 13 8 34 31 37 7 28 35 1</file>
+                    <file> 14 16 24 36 9 22 19 7 10 6 30 21 33 2 27 34 1</file>
                 </tool>
             </inputs>
         </file>
@@ -74,64 +80,31 @@
             <outputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 14</file>
+                    <file> 15</file>
                 </tool>
             </outputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\systick.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 21</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 12 22 36 30 10 11 8 35 1</file>
-                </tool>
-            </inputs>
         </file>
         <file>
             <name>$PROJ_DIR$\Debug\Exe\Systick.out</name>
             <outputs>
                 <tool>
                     <name>ILINK</name>
-                    <file> 9</file>
+                    <file> 8</file>
                 </tool>
             </outputs>
             <inputs>
                 <tool>
                     <name>ILINK</name>
-                    <file> 16 26 38 29 20 25 17 3 21</file>
+                    <file> 18 29 31 35 37 20 17 4 32</file>
                 </tool>
             </inputs>
         </file>
         <file>
-            <name>$PROJ_DIR$\lab4_task1.c</name>
+            <name>[ROOT_NODE]</name>
             <outputs>
                 <tool>
-                    <name>ICCARM</name>
-                    <file> 5</file>
-                </tool>
-            </outputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\lab4_p_task1.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 24</file>
-                </tool>
-            </outputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\lab4_p_task2.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 2</file>
+                    <name>ILINK</name>
+                    <file> 11 8</file>
                 </tool>
             </outputs>
         </file>
@@ -140,9 +113,36 @@
             <inputs>
                 <tool>
                     <name>ILINK</name>
-                    <file> 16 26 38 29 20 25 17 24 2 5 14 3</file>
+                    <file> 18 29 31 35 37 20 17 25 12 13 15 4</file>
                 </tool>
             </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\lab4_p_task1.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 25</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\lab4_task1.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 13</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\lab4_p_task2.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 12</file>
+                </tool>
+            </outputs>
         </file>
         <forcedrebuild>
             <name>[MULTI_TOOL]</name>
@@ -157,11 +157,11 @@
             <tool>ICCARM</tool>
         </forcedrebuild>
         <forcedrebuild>
-            <name>$PROJ_DIR$\lab4_task1.c</name>
+            <name>$PROJ_DIR$\lab4_p_task1.c</name>
             <tool>ICCARM</tool>
         </forcedrebuild>
         <forcedrebuild>
-            <name>$PROJ_DIR$\lab4_p_task1.c</name>
+            <name>$PROJ_DIR$\lab4_task1.c</name>
             <tool>ICCARM</tool>
         </forcedrebuild>
         <forcedrebuild>

@@ -6,7 +6,7 @@
 #include "tm4c123gh6pm.h"
 
 #define __FREQ__ (16000000)
-#define FROM_MS_TO_TICKS(x) (x * __FREQ__ / (1000) - 1)
+#define FROM_MS_TO_TICKS(x) (x * (__FREQ__/1000) - 1)
 
 void SysTickEnable(void);
 void SysTickDisable(void);

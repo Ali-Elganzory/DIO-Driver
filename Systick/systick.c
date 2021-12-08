@@ -1,7 +1,7 @@
 #include "systick.h"
 
 void SysTickEnable(void) {
-  NVIC_ST_CTRL_R |= 5U;
+  NVIC_ST_CTRL_R = 5U;
 }
 
 void SysTickDisable(void) {
