@@ -10,6 +10,9 @@
         <path>$WS_DIR$\Playground\Playground.ewp</path>
     </project>
     <project>
+        <path>$WS_DIR$\SysTick\SysTick.ewp</path>
+    </project>
+    <project>
         <path>$WS_DIR$\Traffic-Lights\Traffic-Lights.ewp</path>
     </project>
     <batchBuild />

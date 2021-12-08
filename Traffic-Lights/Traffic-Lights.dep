@@ -6,10 +6,9 @@
         <name>Debug</name>
         <outputs>
             <file>$PROJ_DIR$\main.c</file>
-            <file>$PROJ_DIR$\UART .c</file>
-            <file>$PROJ_DIR$\UART.h</file>
-            <file>$PROJ_DIR$\Debug\Obj\main.o</file>
             <file>$PROJ_DIR$\Debug\Obj\UART .o</file>
+            <file>$PROJ_DIR$\UART .c</file>
+            <file>$PROJ_DIR$\Debug\Obj\main.o</file>
         </outputs>
         <file>
             <name>$PROJ_DIR$\main.c</name>
@@ -25,7 +24,7 @@
             <outputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 4</file>
+                    <file> 1</file>
                 </tool>
             </outputs>
         </file>
