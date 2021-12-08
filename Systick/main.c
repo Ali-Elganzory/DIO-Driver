@@ -33,7 +33,7 @@ int main()
   
   // Initialize Systick.
   SysTickDisable();
-  SysTickPeriodSet(1000);
+  SysTickPeriodSet(500);
   SysTickEnable();
   
   while (1) {
