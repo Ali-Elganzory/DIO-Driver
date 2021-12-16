@@ -2098,4 +2098,7 @@
     <file>
         <name>$PROJ_DIR$\systick.h</name>
     </file>
+    <file>
+        <name>$PROJ_DIR$\systick_timer.c</name>
+    </file>
 </project>

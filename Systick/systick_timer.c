@@ -1,4 +1,4 @@
-#include <stdint.h>
+/*#include <stdint.h>
 #include <stdbool.h>
 #include <time.h>
 
@@ -8,12 +8,10 @@
 #include "inc/hw_gpio.h"
 #include "inc/hw_memmap.h"
 
-#define __FREQ__ (16000000)
-#define FROM_MS_TO_TICKS(x) (x * (__FREQ__/1000) - 1)
+#include "systick.h"
 
 
-void SysTickHandler(void);
-void Toggle_White(void);
+#define Toggle_Bit(reg, bit) (reg ^= (1<<bit))
 
 
 int main()
@@ -35,38 +33,23 @@ int main()
   
   // Initialize Systick.
   SysTickDisable();
-  SysTickPeriodSet(FROM_MS_TO_TICKS(500));
-  SysTickIntEnable();
-  SysTickIntRegister(SysTickHandler);
+  SysTickPeriodSet(500);
   SysTickEnable();
   
-  __asm ("    CPSIE  I\n");
-  
   while (1) {
-    __asm(" wfi\n");
+    while(!SysTick_Is_Time_out());
+    
+    GPIOPinWrite(GPIO_PORTF_BASE, 
+                 (GPIO_PIN_1 | GPIO_PIN_2 | GPIO_PIN_3),
+                 (GPIO_PIN_1 | GPIO_PIN_2 | GPIO_PIN_3));
+    
+    while(!SysTick_Is_Time_out());
+    
+    GPIOPinWrite(GPIO_PORTF_BASE, 
+                 (GPIO_PIN_1 | GPIO_PIN_2 | GPIO_PIN_3),
+                 (0));
   }
    
   return 0;
 }
-
-
-
-void SysTickHandler(void)
-{
-    static int halfSeconds = 0;
-    if (halfSeconds == 4)
-    {
-        Toggle_White();         /* toggle the white LED */
-    }
-    halfSeconds = (halfSeconds + 1) % 5;
-}
-
-
-void Toggle_White(void)
-{
-  int val = GPIOPinRead(GPIO_PORTF_BASE, 
-                 (GPIO_PIN_1 | GPIO_PIN_2 | GPIO_PIN_3));
-  GPIOPinWrite(GPIO_PORTF_BASE, 
-                 (GPIO_PIN_1 | GPIO_PIN_2 | GPIO_PIN_3),
-                 (~val));
-}
+*/

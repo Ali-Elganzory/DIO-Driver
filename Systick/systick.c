@@ -1,7 +1,7 @@
-#include "systick.h"
+/*#include "systick.h"
 
-void SysTickEnable(void) {
-  NVIC_ST_CTRL_R = 5U;
+void SysTickEnable(uint8_t enableInterrupt) {
+  NVIC_ST_CTRL_R = 5U | (enableInterrupt << 1);
 }
 
 void SysTickDisable(void) {
@@ -15,4 +15,4 @@ void SysTickPeriodSet(uint32_t ui32Period) {
 
 bool SysTick_Is_Time_out(void) {
   return ((NVIC_ST_CTRL_R & 0x10000) != 0);
-}
+}*/

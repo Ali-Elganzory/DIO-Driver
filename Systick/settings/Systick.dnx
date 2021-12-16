@@ -21,13 +21,13 @@
     <LmiFtdiDriver>
         <LMIFTDIserialNo>0E233A4D</LMIFTDIserialNo>
         <LMIFTDIfoundProbes />
-        <LeaveTargetRunning>_ 0</LeaveTargetRunning>
-        <CStepIntDis>_ 0</CStepIntDis>
         <LmiFtdiResetStyle>1</LmiFtdiResetStyle>
         <LmiFtdiResetStrategy>0</LmiFtdiResetStrategy>
+        <LeaveTargetRunning>_ 0</LeaveTargetRunning>
+        <CStepIntDis>_ 0</CStepIntDis>
     </LmiFtdiDriver>
     <DebugChecksum>
-        <Checksum>3491121280</Checksum>
+        <Checksum>14047517</Checksum>
     </DebugChecksum>
     <Exceptions>
         <StopOnUncaught>_ 0</StopOnUncaught>
@@ -103,7 +103,10 @@
         <mode>0</mode>
     </DisassembleMode>
     <Breakpoints2>
-        <Count>0</Count>
+        <Bp0>_ 0 "EMUL_CODE" "0x72" 0 0 1 "" 0 "" 0</Bp0>
+        <Bp1>_ 0 "EMUL_CODE" "0x74" 0 0 1 "" 0 "" 0</Bp1>
+        <Bp2>_ 0 "EMUL_CODE" "0x76" 0 0 1 "" 0 "" 0</Bp2>
+        <Count>3</Count>
     </Breakpoints2>
     <Aliases>
         <A0>_ "C:\Jenkins\workspace\TivaWare-Git-Release\DriverLib\build\DriverLib.test\driverlib\gpio.c" ""</A0>
