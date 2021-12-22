@@ -10,7 +10,10 @@
         <path>$WS_DIR$\Playground\Playground.ewp</path>
     </project>
     <project>
-        <path>$WS_DIR$\SysTick\SysTick.ewp</path>
+        <path>$WS_DIR$\Systick\Systick.ewp</path>
+    </project>
+    <project>
+        <path>$WS_DIR$\Timers\Timers.ewp</path>
     </project>
     <project>
         <path>$WS_DIR$\Traffic-Lights\Traffic-Lights.ewp</path>
