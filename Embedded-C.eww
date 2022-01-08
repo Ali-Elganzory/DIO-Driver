@@ -4,6 +4,9 @@
         <path>$WS_DIR$\DIO-Driver\DIO-Driver.ewp</path>
     </project>
     <project>
+        <path>$WS_DIR$\Interrupts\Interrupts.ewp</path>
+    </project>
+    <project>
         <path>$WS_DIR$\Keypad\Keypad.ewp</path>
     </project>
     <project>

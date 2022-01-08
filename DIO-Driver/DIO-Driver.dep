@@ -5,49 +5,34 @@
     <configuration>
         <name>Debug</name>
         <outputs>
-            <file>$PROJ_DIR$\Debug\List\DIO-Driver.map</file>
             <file>$PROJ_DIR$\Debug\Obj\DIO.o</file>
-            <file>$PROJ_DIR$\types.h</file>
+            <file>$TOOLKIT_DIR$\lib\shb_l.a</file>
+            <file>$TOOLKIT_DIR$\lib\dl7M_tln.a</file>
             <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
             <file>$PROJ_DIR$\Debug\Obj\main.o</file>
-            <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\stdint.h</file>
-            <file>$TOOLKIT_DIR$\lib\dl7M_tln.a</file>
-            <file>$TOOLKIT_DIR$\lib\rt7M_tl.a</file>
-            <file>$TOOLKIT_DIR$\inc\c\DLib_Config_Normal.h</file>
-            <file>$TOOLKIT_DIR$\config\linker\TexasInstruments\TM4C123GH6.icf</file>
-            <file>$TOOLKIT_DIR$\lib\m7M_tls.a</file>
-            <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
-            <file>$PROJ_DIR$\tm4c123gh6pm.h</file>
-            <file>$TOOLKIT_DIR$\lib\shb_l.a</file>
-            <file>$PROJ_DIR$\Debug\Exe\DIO-Driver.out</file>
+            <file>$PROJ_DIR$\Debug\List\DIO-Driver.map</file>
             <file>$PROJ_DIR$\DIO.h</file>
-            <file>$PROJ_DIR$\bitwise_operation.h</file>
+            <file>$PROJ_DIR$\types.h</file>
             <file>$PROJ_DIR$\main.c</file>
+            <file>$TOOLKIT_DIR$\lib\m7M_tls.a</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Config_Normal.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
+            <file>$PROJ_DIR$\tm4c123gh6pm.h</file>
+            <file>$PROJ_DIR$\Debug\Exe\DIO-Driver.out</file>
+            <file>$PROJ_DIR$\bitwise_operation.h</file>
             <file>$PROJ_DIR$\DIO.c</file>
+            <file>$TOOLKIT_DIR$\lib\rt7M_tl.a</file>
+            <file>$TOOLKIT_DIR$\config\linker\TexasInstruments\TM4C123GH6.icf</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdint.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
         </outputs>
-        <file>
-            <name>$PROJ_DIR$\Debug\Exe\DIO-Driver.out</name>
-            <outputs>
-                <tool>
-                    <name>ILINK</name>
-                    <file> 0</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ILINK</name>
-                    <file> 11 8 12 9 15 1 4</file>
-                </tool>
-            </inputs>
-        </file>
         <file>
             <name>[ROOT_NODE]</name>
             <outputs>
                 <tool>
                     <name>ILINK</name>
-                    <file> 0 16</file>
+                    <file> 5 13</file>
                 </tool>
             </outputs>
         </file>
@@ -62,7 +47,22 @@
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 17 2</file>
+                    <file> 6 7</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\Debug\Exe\DIO-Driver.out</name>
+            <outputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 5</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 17 2 9 16 1 0 4</file>
                 </tool>
             </inputs>
         </file>
@@ -71,13 +71,13 @@
             <outputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 1</file>
+                    <file> 0</file>
                 </tool>
             </outputs>
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 10 3 5 7 13 6 17 18 14 2</file>
+                    <file> 10 3 11 18 19 20 6 14 12 7</file>
                 </tool>
             </inputs>
         </file>
