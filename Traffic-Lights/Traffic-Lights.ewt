@@ -2843,9 +2843,12 @@
         <name>$PROJ_DIR$\main.c</name>
     </file>
     <file>
-        <name>$PROJ_DIR$\UART .c</name>
+        <name>$PROJ_DIR$\tm4c123gh6pm.h</name>
     </file>
     <file>
-        <name>$PROJ_DIR$\UART.h</name>
+        <name>$PROJ_DIR$\util.c</name>
+    </file>
+    <file>
+        <name>$PROJ_DIR$\util.h</name>
     </file>
 </project>

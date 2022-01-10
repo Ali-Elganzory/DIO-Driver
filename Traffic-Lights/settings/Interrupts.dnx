@@ -1,20 +1,5 @@
 <?xml version="1.0"?>
 <settings>
-    <Stack>
-        <FillEnabled>0</FillEnabled>
-        <OverflowWarningsEnabled>1</OverflowWarningsEnabled>
-        <WarningThreshold>90</WarningThreshold>
-        <SpWarningsEnabled>1</SpWarningsEnabled>
-        <WarnLogOnly>1</WarnLogOnly>
-        <UseTrigger>1</UseTrigger>
-        <TriggerName>main</TriggerName>
-        <LimitSize>0</LimitSize>
-        <ByteLimit>50</ByteLimit>
-    </Stack>
-    <PlDriver>
-        <FirstRun>0</FirstRun>
-        <MemConfigValue>D:\Program Files\IAR Systems\Embedded Workbench 9.0\arm\CONFIG\debugger\TexasInstruments\TM4C123GH6PM.ddf</MemConfigValue>
-    </PlDriver>
     <LmiFtdiDriver>
         <LMIFTDIserialNo>0E233A4D</LMIFTDIserialNo>
         <LMIFTDIfoundProbes />
@@ -23,11 +8,12 @@
         <LeaveTargetRunning>_ 0</LeaveTargetRunning>
         <CStepIntDis>_ 0</CStepIntDis>
     </LmiFtdiDriver>
-    <ArmDriver>
-        <EnableCache>0</EnableCache>
-    </ArmDriver>
+    <PlDriver>
+        <FirstRun>0</FirstRun>
+        <MemConfigValue>D:\Program Files\IAR Systems\Embedded Workbench 9.0\arm\CONFIG\debugger\TexasInstruments\TM4C123GH6PM.ddf</MemConfigValue>
+    </PlDriver>
     <DebugChecksum>
-        <Checksum>949659990</Checksum>
+        <Checksum>3604190602</Checksum>
     </DebugChecksum>
     <Exceptions>
         <StopOnUncaught>_ 0</StopOnUncaught>
@@ -40,9 +26,23 @@
         <Enabled>0</Enabled>
         <ShowSource>1</ShowSource>
     </Trace1>
+    <Stack>
+        <FillEnabled>0</FillEnabled>
+        <OverflowWarningsEnabled>1</OverflowWarningsEnabled>
+        <WarningThreshold>90</WarningThreshold>
+        <SpWarningsEnabled>1</SpWarningsEnabled>
+        <WarnLogOnly>1</WarnLogOnly>
+        <UseTrigger>1</UseTrigger>
+        <TriggerName>main</TriggerName>
+        <LimitSize>0</LimitSize>
+        <ByteLimit>50</ByteLimit>
+    </Stack>
     <CallStack>
         <ShowArgs>0</ShowArgs>
     </CallStack>
+    <ArmDriver>
+        <EnableCache>0</EnableCache>
+    </ArmDriver>
     <Trace2>
         <Enabled>0</Enabled>
         <ShowSource>0</ShowSource>
@@ -69,11 +69,10 @@
         <Count>0</Count>
     </Breakpoints2>
     <Aliases>
-        <A0>_ "C:\Jenkins\workspace\TivaWare-Git-Release\DriverLib\build\DriverLib.test\driverlib\gpio.c" ""</A0>
-        <A1>_ "C:\Jenkins\workspace\TivaWare-Git-Release\DriverLib\build\DriverLib.test\driverlib\interrupt.c" ""</A1>
-        <A2>_ "C:\Jenkins\workspace\TivaWare-Git-Release\DriverLib\build\DriverLib.test\driverlib\sysctl.c" ""</A2>
-        <A3>_ "C:\Jenkins\workspace\TivaWare-Git-Release\DriverLib\build\DriverLib.test\driverlib\timer.c" ""</A3>
-        <Count>4</Count>
+        <A0>_ "C:\Jenkins\workspace\TivaWare-Git-Release\DriverLib\build\DriverLib.test\driverlib\interrupt.c" ""</A0>
+        <A1>_ "C:\Jenkins\workspace\TivaWare-Git-Release\DriverLib\build\DriverLib.test\driverlib\sysctl.c" ""</A1>
+        <A2>_ "C:\Jenkins\workspace\TivaWare-Git-Release\DriverLib\build\DriverLib.test\driverlib\systick.c" ""</A2>
+        <Count>3</Count>
         <SuppressDialog>0</SuppressDialog>
     </Aliases>
 </settings>
