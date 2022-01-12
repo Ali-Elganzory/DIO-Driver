@@ -1,21 +1,21 @@
-"D:\Uni\Senior 1\Semester 1 - Fall 2021\CSE 211 - Introduction to Embedded Systems\Project\Embedded-C\DIO-Driver\DIO.c"
+"C:\Users\youss\OneDrive\Documents\GitHub\Embedded-C\DIO-Driver\DIO.c"
 -std=c11
 -ferror-limit=0
 -fbracket-depth=512
 -funsigned-char
 -MD
 -MF
-D:\Uni\Senior 1\Semester 1 - Fall 2021\CSE 211 - Introduction to Embedded Systems\Project\Embedded-C\DIO-Driver\Debug\BrowseInfo\DIO.pbi.dep
+C:\Users\youss\OneDrive\Documents\GitHub\Embedded-C\DIO-Driver\Debug\BrowseInfo\DIO.pbi.dep
 -o
-D:\Uni\Senior 1\Semester 1 - Fall 2021\CSE 211 - Introduction to Embedded Systems\Project\Embedded-C\DIO-Driver\Debug\BrowseInfo\DIO.pbi
+C:\Users\youss\OneDrive\Documents\GitHub\Embedded-C\DIO-Driver\Debug\BrowseInfo\DIO.pbi
 -I
-D:\Uni\Senior 1\Semester 1 - Fall 2021\CSE 211 - Introduction to Embedded Systems\Project\Embedded-C\DIO-Driver
+C:\Users\youss\OneDrive\Documents\GitHub\Embedded-C\DIO-Driver
 -I
-D:\Program Files\IAR Systems\Embedded Workbench 9.0\arm\inc\c\aarch32
+E:\Programs\arm\inc\c\aarch32
 -I
-D:\Program Files\IAR Systems\Embedded Workbench 9.0\arm\inc
+E:\Programs\arm\inc
 -I
-D:\Program Files\IAR Systems\Embedded Workbench 9.0\arm\inc\c
+E:\Programs\arm\inc\c
 -D__CHAR_BITS__=8
 -D__CHAR_MAX__=0xff
 -D__CHAR_MIN__=0
@@ -315,8 +315,8 @@ D:\Program Files\IAR Systems\Embedded Workbench 9.0\arm\inc\c
 -D__EDG_FLOAT80_ENABLING_POSSIBLE=0
 -D__EDG_FLOAT128_ENABLING_POSSIBLE=0
 -D__EDG_INT128_EXTENSIONS_ALLOWED=0
--D_DLIB_CONFIG_FILE_HEADER_NAME="D:\Program Files\IAR Systems\Embedded Workbench 9.0\arm\inc\c\DLib_Config_Normal.h"
--D_DLIB_CONFIG_FILE_STRING="D:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\DLib_Config_Normal.h"
+-D_DLIB_CONFIG_FILE_HEADER_NAME="E:\Programs\arm\inc\c\DLib_Config_Normal.h"
+-D_DLIB_CONFIG_FILE_STRING="E:\\Programs\\arm\\inc\\c\\DLib_Config_Normal.h"
 -D__VERSION__="IAR ANSI C/C++ Compiler V9.10.2.313/W64 for ARM"
 -D_VA_DEFINED=
 -D_VA_LIST=struct __va_list

@@ -50,12 +50,17 @@ void PT1_RED_action();
 void PT2_GREEN_action();
 void PT2_RED_action();
 void PT1n2_GREEN_action();
+void lock_pt1();
+void lock_pt2();
+void unlock_pt1();
+void unlock_pt2();
 
 /*****************************
   Constants
 ******************************/
 
 #define CT_STATES_COUNT 6
+#define PT_LOCK_TIME 1000
 
 extern void (*actions[])() = {
   CT1_GREEN_action,
@@ -87,6 +92,10 @@ extern State state = CT1_GREEN;
 extern bool is_paused = false;
 extern uint32_t paused_time = 0;
 extern State paused_ct_state = CT1_GREEN;
+extern bool pt1_lock = false;
+extern bool pt2_lock = false;
+extern bool pt1_request = false;
+extern bool pt2_request = false;
 
 /*****************************
   Entry point
@@ -174,6 +183,13 @@ void init() {
   TimerIntRegister(TIMER3_BASE, TIMER_A, pt2_timeout_isr);
   TimerIntEnable(TIMER3_BASE, TIMER_TIMA_TIMEOUT);
   
+  // PT Lock timer
+  SysCtlPeripheralEnable(SYSCTL_PERIPH_TIMER4);
+  while(!SysCtlPeripheralReady(SYSCTL_PERIPH_TIMER4));
+  TimerDisable(TIMER4_BASE, TIMER_BOTH);
+  TimerConfigure(TIMER4_BASE, (TIMER_CFG_ONE_SHOT));
+  TimerIntEnable(TIMER4_BASE, TIMER_TIMA_TIMEOUT);
+  
   // PT switches
   // Enable Port F.
   SysCtlPeripheralEnable(SYSCTL_PERIPH_GPIOF);
@@ -257,6 +273,12 @@ void pt_switches_isr() {
 
 // PT 1
 void pt1_switch() {
+  
+  if (pt1_lock) {
+    pt1_request = true;
+    return;
+  }
+  
   ct_pause();
   
   if (state == PT2_GREEN || state == PT1n2_GREEN) {
@@ -277,7 +299,8 @@ void pt1_timeout_isr() {
   } else {
     ct_resume();
   }
-  TimerIntClear(TIMER2_BASE, TIMER_TIMA_TIMEOUT);
+  lock_pt1();
+  TimerIntClear(TIMER2_BASE, TIMER_TIMA_TIMEOUT); 
 }
 
 void setup_pt1_timer(uint32_t time) {
@@ -289,8 +312,36 @@ void setup_pt1_timer(uint32_t time) {
   TimerEnable(TIMER2_BASE, TIMER_BOTH);
 }
 
+void lock_pt1(){
+  pt1_lock = true;
+  // Disable timer.
+  TimerDisable(TIMER4_BASE, TIMER_BOTH);
+  // Set interval load.
+  TimerLoadSet(TIMER4_BASE, TIMER_A, FROM_MS_TO_TICKS(PT_LOCK_TIME));
+  // Enable timer.
+  TimerIntRegister(TIMER4_BASE, TIMER_A, unlock_pt1);
+  TimerEnable(TIMER4_BASE, TIMER_BOTH);
+}
+
+void unlock_pt1(){
+  // Disable timer.
+  TimerDisable(TIMER4_BASE, TIMER_BOTH);
+  TimerIntClear(TIMER4_BASE, TIMER_TIMA_TIMEOUT);
+  pt1_lock = false;
+  if (pt1_request) {
+    pt1_switch();
+    pt1_request = false;
+  }
+}
+
 // PT 2
 void pt2_switch() {
+  
+  if (pt2_lock) {
+    pt2_request = true;
+    return;
+  }
+  
   ct_pause();
   
   if (state == PT1_GREEN || state == PT1n2_GREEN) {
@@ -311,6 +362,7 @@ void pt2_timeout_isr() {
   } else {
     ct_resume();
   }
+  lock_pt2();
   TimerIntClear(TIMER3_BASE, TIMER_TIMA_TIMEOUT);
 }
 
@@ -321,6 +373,28 @@ void setup_pt2_timer(uint32_t time) {
   TimerLoadSet(TIMER3_BASE, TIMER_A, FROM_MS_TO_TICKS(time));
   // Enable timer.
   TimerEnable(TIMER3_BASE, TIMER_BOTH);
+}
+
+void lock_pt2(){
+  pt2_lock = true;
+  // Disable timer.
+  TimerDisable(TIMER4_BASE, TIMER_BOTH);
+  // Set interval load.
+  TimerLoadSet(TIMER4_BASE, TIMER_A, FROM_MS_TO_TICKS(PT_LOCK_TIME));
+  // Enable timer.
+  TimerIntRegister(TIMER4_BASE, TIMER_A, unlock_pt2);
+  TimerEnable(TIMER4_BASE, TIMER_BOTH);
+}
+
+void unlock_pt2(){
+    // Disable timer.
+  TimerDisable(TIMER4_BASE, TIMER_BOTH);
+  TimerIntClear(TIMER4_BASE, TIMER_TIMA_TIMEOUT);
+  pt2_lock = false;
+  if (pt2_request) {
+    pt2_switch();
+    pt2_request = false;
+  }
 }
 
 void CT1_GREEN_action() {
